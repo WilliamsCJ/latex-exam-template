@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{url}
+\usepackage{fancyhdr}
+
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0em}
+
+\def\module{} % Insert module title here
+\def\matric{} % Insert matriculation number here
+
+% Custom command for display code (i.e. function names, variables) in-line
+\def\code#1{\texttt{#1}}
+
+\renewcommand{\thesubsection}{\alph{subsection})}
+\renewcommand{\thesubsubsection}{\roman{subsubsection})}
+
+% Page header configuration
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\emph{\module \;Exam}}
+\rhead{\emph{\matric}}
+\renewcommand{\headrulewidth}{0pt}
+
+
+\title{
+{\module \;Exam}\\
+{\includegraphics[width=80mm]{images/university-logo.png}}
+}
+\author{\matric}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\newpage
+\clearpage
+\pagenumbering{arabic} 
+
+\input{questions/question-1.tex}
+\newpage
+
+% Insert other questions here
+
+\end{document}
