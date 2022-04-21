@@ -1,0 +1,10 @@
+# LaTeX
+**/*.aux
+**/*.bbl
+**/*.blg
+**/*.fdb_latexmk
+**/*.fls
+**/*.synctex.gz
+**/*.aux
+**/*.log
+**/*.pdf
